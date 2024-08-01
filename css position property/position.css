@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(190, 183, 183);
+    padding-top: 10px;
+}
+.left{
+    float: left;
+    padding-left: 50px;padding-top: 7px;
+}
+.left img{
+    width: 100px;
+    border-radius: 50px;
+}
+.right{
+    float: right;
+}
+.line li a button{
+    background-color:rgb(190, 183, 183);color: rgb(11, 1, 1);
+    border: solid black 3px;font-weight: bold;border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    transition:transform 0.5s ,background-color 0.5s,color 0.5s;
+}
+.line li a button:hover{
+    background-color: red;
+    transform:translatey(-10px);
+    color: white;
+}
+.line li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 0px 50px ;
+    color:black;
+}
+.line{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;  
+}
+.line li a:hover{
+    text-transform:capitalize;
+    color: red;
+    text-shadow: black;
+}
+.profile img{
+    padding-top: 50px;padding-right: 50px;
+    height: 500px;
+    float: right;  
+    border-radius: 80px;
+}
+.profile .words {
+    width: 100px;
+    height: 100px;
+    background:none;
+    position: relative;
+    font-size: xx-large;
+    padding-top: 50px;
+    padding-left: 200px;
+    animation: mymove 8s infinite;
+  }
+
+  @keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 100px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+  }
+ span{
+    color: red;  
+} 
+.words1{
+    font-weight: bold;
+    margin-top: 300px;
+    padding-left: 50px;
+    position:relative;
+    animation: move 5s infinite;
+}
+@keyframes move {
+    0%   { left: 0px;color: black; }
+    25%  { left: 100px; color: gray;}
+    50%  {left: 100px; color: rgb(113, 28, 28);}
+    75%  {left: 0px; color: rgb(206, 12, 12);}
+    100% {left: 0px;color: red;}
+}
+.clear{
+    clear: both;
+}
+.bounty h1{
+    text-shadow: 2px 2px #ff0000; 
+    float: right;
+    text-align: center;
+}
+.bounty p{
+    margin-left: 1000px;
+    margin-top: 100px;
+    text-align: center;
+}
+.bounty{
+    float: right;
+    padding-top: 150px;
+}
+.picture{
+    float:left;padding-left: 250px;
+}
+.picture .pic1{
+    position: absolute;
+    z-index: 10;
+}
+.picture .pic2{
+    position: relative;
+    left: 120px;top: 100px;
+    z-index: 2;
+}
+.picture .pic2:hover{
+    z-index: 20;
+    animation: biger 1s;
+}
+.picture .pic1:hover{
+    animation: biger 1s;
+}
+@keyframes biger{
+   from{ transform: translatey(0%)}
+   to{ transform: translatey(10%);}
+}
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: white;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #6df2bf;
+    border: none;
+    color: rgb(14, 13, 13);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .button:hover{
+    background-color: rgb(0, 255, 89) ;color: white;
+  }
+  .pricecard{
+    padding: 200px;margin-top: 30%;
+  }
+  footer{
+    padding: 50px;
+    background-color: black;
+  }
+  .text1{
+    text-align: center;
+    color: white;font-weight: bold;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+  .logo img{
+    border-radius: 50%;
+  }
